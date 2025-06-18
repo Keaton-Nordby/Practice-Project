@@ -33,10 +33,133 @@ body {
 }
 
 .nav-list li a{
-    color: #1b91db;
+    color: #9370DB;
     text-decoration: none;
     padding: 22px;
 }
+
+.employees{
+    margin-left: 1.5%;
+}
+
+.employee-list{
+    list-style: none;
+    padding-bottom: 10px;
+    display: inline-flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    background-color: #edeeef;
+    border-style: hidden;
+    border-radius: 10px;
+}
+
+.employee-card{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-style: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px 6px #ccc;;
+}
+
+.user-img{
+    float: left;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px;
+    border-color:#9370DB;
+}
+
+.employment-details{
+    display: block;
+    float: rihgt;
+    margin-left: 20px;
+}
+
+.interviews{
+    margin: 1.5%;
+    width: 25%;
+    background-color: #edeeef;
+    border-style: hidden;
+    border-radius: 10px;
+    padding: 15px;
+    list-style: none;
+}
+
+.list-item{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-style: hidden;
+    border-radius: 5px;
+}
+
+.accept-btn{
+    width: auto;
+    background-color: #36bc65;
+    border-style: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1% 2% 0% 0%;
+}
+
+.reject-btn{
+    width: auto;
+    background-color: red;
+    border-style: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1% 2% 0% 0%;
+}
+
+#employee-modal{
+    text-align: center;
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+}
+
+.modal-header{
+    border-radius: 10px 10px 0px 0px;
+    background-color: #9370DB;
+}
+
+.modal-header-content{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#confirmBtn{
+    margin: 30px;
+    float: right;
+}
+
+
+
+
 
 
 
