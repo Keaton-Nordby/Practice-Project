@@ -1,0 +1,42 @@
+body {
+    margin: auto;
+}
+
+.nav-wrapper {
+    background-color: #ffff;
+    padding: 5px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    z-index: 1;
+}
+
+#icon {
+    max-width: 100px;
+    
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0;
+    padding-top: 26px;
+}
+
+.nav-list li a{
+    color: #1b91db;
+    text-decoration: none;
+    padding: 22px;
+}
+
+
+

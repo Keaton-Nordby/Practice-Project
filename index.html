@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keatons Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav>
+            <ul class="nav-list">
+                <img id="icon" src="images/91809.png" alt="">
+                <li class="nav-item"><a href="index.html">Accounts</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!--Employee section-->
+    <div class="employees">
+        <h2>Employees</h2>
+        <div class="employee-list">
+            <li>
+                <div class="employee-card" id="employee-1">
+                    <img class="user-img" src="/images/girl.jpg" alt="">
+                    <span>
+                        <div class="employment-details" id="employee1-details">
+
+                            <span class="name-format">Grace</span>
+                            <span class="name-format">Smith</span>
+                            <br>
+                            <span>Developer</span>
+                            <br>
+                            <span>Tech Department</span>
+                            <br>
+                            <span>gsmith@gmail.com</span>
+                            <br>
+                            <span>$65,000.00</span>
+
+                        </div>
+                    </span>
+                </div>
+            </li>
+
+            <li>
+                <div class="employee-card" id="employee-2">
+                    <img class="user-img" src="/images/guy.jpg" alt="">
+                    <span>
+                        <div class="employment-details" id="employee2-details">
+
+                            <span class="name-format">Jimmy</span>
+                            <span class="name-format">Cricket</span>
+                            <br>
+                            <span>SWE</span>
+                            <br>
+                            <span>Tech Department</span>
+                            <br>
+                            <span>Jimmy@gmail.com</span>
+                            <br>
+                            <span>$85,000.00</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+
+            <li>
+                <div class="employee-card" id="employee-3">
+                    <img class="user-img" src="/images/girl2.jpg" alt="">
+                    <span>
+                        <div class="employment-details" id="employee3-details">
+
+                            <span class="name-format">Grace</span>
+                            <span class="name-format">Smith</span>
+                            <br>
+                            <span>UI/UX Designer</span>
+                            <br>
+                            <span>Marketing Department</span>
+                            <br>
+                            <span>katiemills@gmail.com</span>
+                            <br>
+                            <span>$45,000.00</span>
+
+                        </div>
+                    </span>
+                </div>
+            </li>
+
+        </div>
+    </div>
+
+     <!--Interview section-->
+    <div>
+        <h2>Upcoming Interviews</h2>
+
+        <li>
+            <div class="list-item">
+                <h3>Marketing</h3>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+
+        <li>
+            <div class="list-item">
+                <h3>Designer</h3>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+    </div>
+
+    <!--Models, these are the pop up screens when adding an interview etc.-->
+    <div class="modal" id="employee-modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-header-content">
+                    <span>Add Employee</span>
+                </div>
+            </header>
+
+            <div class="modal-container">
+                <label for="fname">First Name</label>
+                <input type="text" id="name">
+                <br>
+                <label for="fname">Last Name</label>
+                <input type="text" id="surname">
+                <br>
+                <label for="fname">Position</label>
+                <input type="text" id="position">
+                <br>
+                <label for="lname">Department</label>
+                <input type="text" id="department">
+                <br>
+                <label for="lname">Email</label>
+                <input type="text" id="Email">
+                <br>
+                <label for="lname">Salary</label>
+                <input type="text" id="salary">
+                <br>
+
+                <button id="confirmBtn" type="button" name="button" onclick="addEmployee()">Confirm</button>
+            </div>
+
+            <footer class="modal-footer">
+
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <!--MODAL to add interview-->
+    <div id="interviewModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-header-content">
+                    <span>Add Interview</span>
+                </div>
+            </header>
+
+            <div class="modal-container">
+                <label for="fname">Department</label>
+                <input type="text" id="int-department">
+                <br>
+                <label for="fname">Position</label>
+                <input type="text" id="int-position">
+                <br>
+
+                <button id="confirmIntBtn" type="button" name="button" onclick="addInterview()">Confirm</button>
+
+            </div>
+            <footer class="modal-footer">
+
+            </footer>
+        </div>
+    </div>
+
+
+    <!--/////////////////////-->
+    <button class="btn" type="button" name="button" onclick="showAddIntModal()">Add Interview</button>
+    <button class="btn" type="button" name="button" onclick="showAddEmpMoodal()">Add Employee</button>
+
+
+    <script type="text/javascript" src="#">
+
+    </script>
+</body>
+</html>
